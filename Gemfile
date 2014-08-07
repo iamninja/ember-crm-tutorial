@@ -36,6 +36,9 @@ gem 'ffaker'
 # Use Puma as server
 gem 'puma'
 
+# For heroku
+gem 'rails_12factor'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
