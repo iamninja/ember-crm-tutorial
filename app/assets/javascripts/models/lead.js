@@ -14,3 +14,9 @@ App.Lead = DS.Model.extend({
 App.Lead.reopenClass({
   STATUSES: ['new', 'in progress', 'closed', 'bad']
 });
+
+App.Lead.reopenClass({
+  valid: function(fields) {
+    return fields.firstName && fields.lastName
+  }
+});
